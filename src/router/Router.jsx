@@ -7,10 +7,9 @@ export function Router() {
     <BrowserRouter>
       {/* rutas publicas */}
       <Routes>
-        <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
-
         {/* rutas privadas */}
         <Route element={<Protected />}>
           <Route path="/products" element={<Products />} />

@@ -35,11 +35,11 @@ export function CreateProduct(props) {
       <Dialog open={current} onOpenChange={handleToggle}>
         {/* para poder activar el dialog usamos DialogTrigger */}
         <DialogTrigger asChild>
-          <Button>Crear Producto</Button>
+          <Button>Registro de Usuario</Button>
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Crear Productos</DialogTitle>
+            <DialogTitle>Registro de Usuario</DialogTitle>
           </DialogHeader>
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-4">

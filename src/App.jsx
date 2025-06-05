@@ -1,6 +1,4 @@
 import { useEffect } from "react";
-import { SidebarProvider } from "./components/ui/sidebar";
-import { AppSidebar } from "./components/layout/AppSidebar";
 import { Router } from "./router";
 import { useDispatch } from "react-redux";
 import { getSession } from "./redux/authSlice";

@@ -4,10 +4,9 @@ import { ChevronLeft, ChevronRight } from "react-feather"
 
 export function Carousel({
   children: slides,
-  autoSlide = false,
+  autoSlide = true,
   autoSlideInterval = 3000,
 }) {
-
   const [curr, setCurr] = useState(0)
 
   const prev = () =>
@@ -21,7 +20,7 @@ export function Carousel({
     return () => clearInterval(slideInterval)
   }, [])
   return (
-    
+
     <div className="overflow-hidden">
       <div
         className="flex transition-transform ease-out duration-500"

@@ -56,7 +56,7 @@ export function Login() {
             <div className="flex items-center border-b border-gray-300">              
               <FaUser  className="text-gray-500 mr-2" />
               <label 
-                htmlFor="label" 
+                htmlFor="email" 
                 className="sr-only">
                   Usuario
               </label>
@@ -64,8 +64,7 @@ export function Login() {
                      type="email" 
                      name="email"
                      placeholder="email" 
-                     onChange={handleInputChange}
-                     className="flex-1 shadow-" />
+                     onChange={handleInputChange} />
             </div>
             <div className="flex items-center border-b border-gray-300">
               <FaLock className="text-gray-500 mr-2" />
@@ -80,18 +79,18 @@ export function Login() {
               name="password"
               onChange={handleInputChange}
               placeholder="Password"  
-              className="flex-1" />
+               />
             </div>
             <div>
               <Button 
               className="bg-green-800 w-full hover:bg-green-700 transition duration-200"
               type="submit"
               >Ingresar</Button>
-            </div>
-            <div className="text-center">
+            </div>  
+            <div className="text-center space-y-2">
               <p className="text-green-800 text-sm font-bold hover:underline" onClick={() => alert('Recuperar contraseña')}>¿Olvidaste tu contraseña?</p>
+              <p className="text-xs text-center text-gray-500">Plataforma de Gestión Educativa</p>
             </div>
-            <p className="text-xs text-center text-gray-500">Plataforma de Gestión Educativa</p>
           </form>
         </CardContent>
       </Card>
